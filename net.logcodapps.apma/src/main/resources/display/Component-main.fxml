@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="component_home_display" 
+style="-fx-background-color: white;"
+ xmlns="http://javafx.com/javafx/11.0.1" 
+ xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="net.logcodapps.apma.component.ComponentHome">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image_logo" fitHeight="153.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+              
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="282.0" text="Sistema Cadastro AMAP">
+               <font>
+                  <Font name="Apple Garamond" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <Hyperlink fx:id="btAssociocao" onAction="#componentAssociacaoEvent" alignment="CENTER" prefHeight="48.0" prefWidth="279.0" style="-fx-border-style: solid; -fx-border-width: 2pt; -fx-background-color: white; -fx-border-radius: 4pt; -fx-border-color: silver;" text="Gerenciar Associaçao">
+               <font>
+                  <Font name="Apple Garamond Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="btAssociado" onAction="#componentAssociadoEvent" alignment="CENTER" layoutX="21.0" layoutY="83.0" prefHeight="48.0" prefWidth="279.0" style="-fx-border-style: solid; -fx-border-width: 2pt; -fx-background-color: white; -fx-border-radius: 4pt; -fx-border-color: silver;" text="Gerenciar Associado">
+               <font>
+                  <Font name="Apple Garamond Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="btfuncionario" onAction="#componentFuncianarioEvent" alignment="CENTER" layoutX="21.0" layoutY="328.0" prefHeight="48.0" prefWidth="279.0" style="-fx-border-style: solid; -fx-border-width: 2pt; -fx-background-color: white; -fx-border-radius: 4pt; -fx-border-color: silver;" text="Gerenciar Funcionario">
+               <font>
+                  <Font name="Apple Garamond Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Hyperlink>
+         </children>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
